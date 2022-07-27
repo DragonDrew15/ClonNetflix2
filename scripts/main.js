@@ -39,7 +39,7 @@ getMovies(API_URL);
 function getMovies(url){
 	fetch(url).then(res => res.json()).then(data => {
 		// console.log(data);
-		//showMovies(data.results)
+		// showMovies(data.results)
 	})
 }
 
@@ -47,12 +47,19 @@ function showMovies(data){
 	carousel1.innerHTML = '';
 
 	data.forEach(movie => {
-		const {title, poster_path, overview} = movie;
+		const {title, poster_path, overview, release_date} = movie;
 		const movieElem = document.createElement('div');		
 		movieElem.classList.add('pelicula');
-		movieElem.innerHTML = `
+		movieElem.innerHTML = `			
 			<a href="#"><img src="${IMG_URL+poster_path}" alt="${title}"></a>
-			<h4 class= "bg-black text-light">${title}</h4>
+			<p class="title" id="title">${title}</p>
+			<div class="descripcion bg-light text-secondary text-justify"  >
+				<p class="overview " id="overview"> "${overview}"</p>
+				<p class="title-cast font-weight-bold">Cast</p>
+				<p class="cast" id="cast">....</p>
+				<p class="title-release">Release Date</p>
+				<p class="release date" id="release date">"${release_date}"</p>
+			</div>
 		`
 
 	carousel1.appendChild(movieElem);

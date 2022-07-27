@@ -134,7 +134,9 @@ header h1{
 }
 
 .peliculas-populares .contenedor-carousel .carousel .pelicula {
-	width: 20%;
+	min-width: 20%;
+    max-width: 20%;
+    max-height: 80vh;
 	transition: .3s ease all;
 	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
 }
@@ -152,6 +154,8 @@ header h1{
 .descripcion {
     padding: 1rem;
     box-shadow: 3rem;
+    height: 200px;
+    overflow: scroll;
 }
 
 .descripcion .title, .title-cast, .title-release  {
