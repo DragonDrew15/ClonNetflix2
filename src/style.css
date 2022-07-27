@@ -134,7 +134,7 @@ header h1{
 }
 
 .peliculas-populares .contenedor-carousel .carousel .pelicula {
-	min-width: 20%;
+	width: 20%;
 	transition: .3s ease all;
 	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
 }
@@ -150,6 +150,15 @@ header h1{
 }
 
 .descripcion {
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 1rem;
     box-shadow: 3rem;
+}
+
+.descripcion .title, .title-cast, .title-release  {
+    font-weight: bolder;
+}
+
+.descripcion .overview, .cast{
+    font-size: smaller;
+    text-align: justify;
 }
