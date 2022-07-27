@@ -10,7 +10,7 @@ body{
     height: 100vh;
     background-color: black;
     color: var(--text-color);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Poppins', sans-serif;
     /* height: 100vh; */
     /* align-items: top; */
     background-image: url(./img/fondo1.jpeg);
@@ -135,6 +135,8 @@ header h1{
 
 .peliculas-populares .contenedor-carousel .carousel .pelicula {
 	min-width: 20%;
+    max-width: 20%;
+    max-height: 80vh;
 	transition: .3s ease all;
 	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
 }
@@ -147,4 +149,20 @@ header h1{
 .peliculas-populares .contenedor-carousel .carousel .pelicula img {
 	width: 100%;
 	vertical-align: top;
+}
+
+.descripcion {
+    padding: 1rem;
+    box-shadow: 3rem;
+    height: 200px;
+    overflow: scroll;
+}
+
+.descripcion .title, .title-cast, .title-release  {
+    font-weight: bolder;
+}
+
+.descripcion .overview, .cast{
+    font-size: smaller;
+    text-align: justify;
 }
