@@ -32,7 +32,6 @@ flechaIzquierda.addEventListener('click', () => {
 
 const API_KEY = '&api_key=580c12c0e5e7750e60a81c6bb5d745a1';
 const BASE_URL = 'https://api.themoviedb.org/3';
-// const TRENDING = BASE_URL + '/discover/movie?sort_by=popularity.desc&language=es'+API_KEY;
 const TRENDING = BASE_URL + '/trending/movie/week?' + API_KEY + '&language=es';
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 const searchURL = BASE_URL+'/search/movie?'+API_KEY; 
@@ -45,7 +44,6 @@ getMovies(TRENDING);
 
 function getMovies(url){
 	fetch(url).then(res => res.json()).then(data => {
-		// console.log(data);
 		showMovies(data.results);
 	})
 }
