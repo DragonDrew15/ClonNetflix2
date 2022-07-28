@@ -78,6 +78,9 @@ header h1{
     color: var(--primary-text);
 }
 
+.listado{
+    flex-wrap: nowrap;
+}
 .contenedor-carousel{
     display: inline;
     height: auto;
@@ -88,6 +91,7 @@ header h1{
     flex-wrap: nowrap;
     justify-content: inherit;
     /*height: 400px;*/
+    width: 50%;
 }
 .pelicula{
     /*width: 100%;*/
@@ -113,7 +117,7 @@ header h1{
     left: 0;
     right: 0;
     bottom: -25px;
-    background-color: #fff;
+    background-color: rgb(151, 38, 38);
     padding: .5rem;
     max-height: 100%;
     /*min-width: 20%;*/
@@ -196,7 +200,7 @@ header h1{
 }
 
 .peliculas-populares .contenedor-carousel .carousel .pelicula img {
-	height: 50vh;
+	height: 25vh;
 	vertical-align: top;
 }
 
