@@ -78,11 +78,16 @@ header h1{
     color: var(--primary-text);
 }
 
+.contenedor-carousel{
+    display: inline;
+    height: auto;
+}
+
 .carousel{
     display: flex;
     flex-wrap: nowrap;
     justify-content: inherit;
-    height: 250px;
+    /*height: 400px;*/
 }
 .pelicula{
     /*width: 100%;*/
@@ -90,24 +95,24 @@ header h1{
     border-radius: 3px;
     box-shadow: 0.2PX 4PX 5PX rgba(0,0,0,0.1);
     background-color: var(--secondary-color);
-    position: relative;
+    position: sticky;
     /*overflow: hidden;*/
-    min-width: 10%;
+    min-width: 1%;
     /*min-height: 5%;*/
 	transition: .3s ease all;
 	/*box-shadow: 5px 5px 10px 0px rgba(0,0,0, .3);*/
 }
 
-.pelicua img{
-    width: 100%;
-    height: auto;
+/*.pelicua*/ img{
+    /*width: 80%;*/
+    height: 10%;
 }
 
-.overview{
+.descripcion{
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -30px;
+    bottom: -25px;
     background-color: #fff;
     padding: .5rem;
     max-height: 100%;
@@ -116,7 +121,7 @@ header h1{
     transition: transform 0.3s ease-in;
 }
 
-.pelicula:hover .overview{
+.pelicula:hover .descripcion{
     transform: translateY(0);
 }
 
