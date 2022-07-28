@@ -13,10 +13,11 @@ body{
     font-family: 'Poppins', sans-serif;
     /* height: 100vh; */
     /* align-items: top; */
-    background-image: url(./img/fondo1.jpeg);
+    /*background-image: url(./img/fondo1.jpeg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
+    background-color: black;
 }
 
 header{
@@ -24,6 +25,7 @@ header{
     justify-content: space-between;
     width: 100%;
     background-color: transparent;
+    padding: 1rem;
 }
 
 .headerDerecha{
@@ -83,6 +85,10 @@ header h1{
 /* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
 .peliculas-populares {
 	margin-bottom: 70px;
+}
+
+.peliculas-populares h2{
+    color: white;
 }
 
 .peliculas-populares .contenedor-principal {
