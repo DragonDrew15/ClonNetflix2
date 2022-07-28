@@ -78,6 +78,46 @@ header h1{
     color: var(--primary-text);
 }
 
+.carousel{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: inherit;
+    /* height: 60vh; */
+}
+.pelicula{
+    position: relative;
+    /*width: 100%;*/
+    /* margin: .3rem; */
+    /* border-radius: 3px; */
+    /* box-shadow: 0.2PX 4PX 5PX rgba(0,0,0,0.1); */
+    /* background-color: var(--secondary-color); */
+    /*overflow: hidden;*/
+    /* min-width: 10%; */
+    /*min-height: 5%;*/
+	/* transition: .3s ease all; */
+	/*box-shadow: 5px 5px 10px 0px rgba(0,0,0, .3);*/
+}
+
+.pelicula img{
+    width: 100%;
+}
+
+.descripcion{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    background-color: #fff;
+    padding: .5rem;
+    max-height: 100%;
+    /*min-width: 20%;*/
+    transform: translateY(100.1%);
+    transition: transform 0.3s ease-in;
+}
+
+.pelicula:hover .descripcion{
+    transform: translateY(0);
+}
 
 
 /* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
@@ -135,7 +175,7 @@ header h1{
 
 .peliculas-populares .contenedor-carousel .carousel .pelicula {
 	min-width: 20%;
-    max-width: 20%;
+    max-width: 25%;
     /* height: 80vh; */
 	transition: .3s ease all;
 	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
@@ -150,14 +190,14 @@ header h1{
 }
 
 .peliculas-populares .contenedor-carousel .carousel .pelicula img {
-	height: 50vh;
+	/* height: 50vh; */
 	vertical-align: top;
 }
 
 .descripcion {
     padding: 1rem;
     box-shadow: 3rem;
-    height: 30vh;
+    /* height: 30vh; */
     overflow: scroll;
 }
 
