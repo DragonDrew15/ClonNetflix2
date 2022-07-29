@@ -82,6 +82,25 @@ header h1{
     position: relative;
 }
 
+span{
+    background-color: var(--secondary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+span.green{
+    color: lightgreen;
+}
+
+span.orange{
+    color: orange;
+}
+
+span.red{
+    color: red;
+}
+
 .pelicula img{
     width: 100%;
 }

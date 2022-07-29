@@ -62,13 +62,14 @@ function showMovies(data){
 	carousel1.innerHTML = '';
 
 	data.forEach(movie => {
-		const {title, poster_path, overview, release_date} = movie;
+		const {title, poster_path, vote_average, overview, release_date} = movie;
 		const movieElem = document.createElement('div');		
 		movieElem.classList.add('pelicula');
 		movieElem.innerHTML = `			
 			<a href="#"><img src="${IMG_URL+poster_path}" alt="${title}"></a>
 			<div class="descripcion bg-light text-secondary text-justify">
 				<p class="title" id="title">${title}</p>
+				<span class="${getColor(vote_average)}">${vote_average}</span>
 				<p class="overview " id="overview"> "${overview}"</p>
 				<p class="title-cast font-weight-bold">Cast</p>
 				<p class="cast" id="cast">....</p>
@@ -95,13 +96,14 @@ function thetMovies2(data){
 	carousel2.innerHTML = '';
 
 	data.forEach(movie => {
-		const {title, poster_path, overview, release_date} = movie;
+		const {title, poster_path, vote_average, overview, release_date} = movie;
 		const movieEl = document.createElement('div');		
 		movieEl.classList.add('pelicula');
 		movieEl.innerHTML = `			
 			<a href="#"><img src="${IMG_URL+poster_path}" alt="${title}"></a>
 			<div class="descripcion bg-light text-secondary text-justify">
 				<p class="title" id="title">${title}</p>
+				<span class="${getColor(vote_average)}">${vote_average}</span>
 				<p class="overview " id="overview"> "${overview}"</p>
 				<p class="title-cast font-weight-bold">Cast</p>
 				<p class="cast" id="cast">....</p>
@@ -128,13 +130,14 @@ function thetMovies3(data){
 	carousel3.innerHTML = '';
 
 	data.forEach(movie => {
-		const {title, poster_path, overview, release_date} = movie;
+		const {title, poster_path, vote_average, overview, release_date} = movie;
 		const movieEl = document.createElement('div');		
 		movieEl.classList.add('pelicula');
 		movieEl.innerHTML = `			
 			<a href="#"><img src="${IMG_URL+poster_path}" alt="${title}"></a>
 			<div class="descripcion bg-light text-secondary text-justify">
 				<p class="title" id="title">${title}</p>
+				<span class="${getColor(vote_average)}">${vote_average}</span>
 				<p class="overview " id="overview"> "${overview}"</p>
 				<p class="title-cast font-weight-bold">Cast</p>
 				<p class="cast" id="cast">....</p>
@@ -160,13 +163,14 @@ function thetMovies4(data){
 	carousel4.innerHTML = '';
 
 	data.forEach(movie => {
-		const {title, poster_path, overview, release_date} = movie;
+		const {title, poster_path, vote_average, overview, release_date} = movie;
 		const movieEl = document.createElement('div');		
 		movieEl.classList.add('pelicula');
 		movieEl.innerHTML = `			
 			<a href="#"><img src="${IMG_URL+poster_path}" alt="${title}"></a>
 			<div class="descripcion bg-light text-secondary text-justify">
 				<p class="title" id="title">${title}</p>
+				<span class="${getColor(vote_average)}">${vote_average}</span>
 				<p class="overview " id="overview"> "${overview}"</p>
 				<p class="title-cast font-weight-bold">Cast</p>
 				<p class="cast" id="cast">....</p>
@@ -192,13 +196,14 @@ function thetMovies5(data){
 	carousel5.innerHTML = '';
 
 	data.forEach(movie => {
-		const {title, poster_path, overview, release_date} = movie;
+		const {title, poster_path, vote_average, overview, release_date} = movie;
 		const movieEl = document.createElement('div');		
 		movieEl.classList.add('pelicula');
 		movieEl.innerHTML = `			
 			<a href="#"><img src="${IMG_URL+poster_path}" alt="${title}"></a>
 			<div class="descripcion bg-light text-secondary text-justify">
 				<p class="title" id="title">${title}</p>
+				<span class="${getColor(vote_average)}">${vote_average}</span>
 				<p class="overview " id="overview"> "${overview}"</p>
 				<p class="title-cast font-weight-bold">Cast</p>
 				<p class="cast" id="cast">....</p>
@@ -224,13 +229,14 @@ function thetMovies6(data){
 	carousel6.innerHTML = '';
 
 	data.forEach(movie => {
-		const {title, poster_path, overview, release_date} = movie;
+		const {title, poster_path, vote_average, overview, release_date} = movie;
 		const movieEl = document.createElement('div');		
 		movieEl.classList.add('pelicula');
 		movieEl.innerHTML = `			
 			<a href="#"><img src="${IMG_URL+poster_path}" alt="${title}"></a>
 			<div class="descripcion bg-light text-secondary text-justify">
 				<p class="title" id="title">${title}</p>
+				<span class="${getColor(vote_average)}">${vote_average}</span>
 				<p class="overview " id="overview"> "${overview}"</p>
 				<p class="title-cast font-weight-bold">Cast</p>
 				<p class="cast" id="cast">....</p>
@@ -256,13 +262,14 @@ function thetMovies7(data){
 	carousel7.innerHTML = '';
 
 	data.forEach(movie => {
-		const {title, poster_path, overview, release_date} = movie;
+		const {title, poster_path, vote_average, overview, release_date} = movie;
 		const movieEl = document.createElement('div');		
 		movieEl.classList.add('pelicula');
 		movieEl.innerHTML = `			
 			<a href="#"><img src="${IMG_URL+poster_path}" alt="${title}"></a>
 			<div class="descripcion bg-light text-secondary text-justify">
 				<p class="title" id="title">${title}</p>
+				<span class="${getColor(vote_average)}">${vote_average}</span>
 				<p class="overview " id="overview"> "${overview}"</p>
 				<p class="title-cast font-weight-bold">Cast</p>
 				<p class="cast" id="cast">....</p>
@@ -288,13 +295,14 @@ function thetMovies8(data){
 	carousel8.innerHTML = '';
 
 	data.forEach(movie => {
-		const {title, poster_path, overview, release_date} = movie;
+		const {title, poster_path, vote_average, overview, release_date} = movie;
 		const movieEl = document.createElement('div');		
 		movieEl.classList.add('pelicula');
 		movieEl.innerHTML = `			
 			<a href="#"><img src="${IMG_URL+poster_path}" alt="${title}"></a>
 			<div class="descripcion bg-light text-secondary text-justify">
 				<p class="title" id="title">${title}</p>
+				<span class="${getColor(vote_average)}">${vote_average}</span>
 				<p class="overview " id="overview"> "${overview}"</p>
 				<p class="title-cast font-weight-bold">Cast</p>
 				<p class="cast" id="cast">....</p>
@@ -320,13 +328,14 @@ function thetMovies9(data){
 	carousel9.innerHTML = '';
 
 	data.forEach(movie => {
-		const {title, poster_path, overview, release_date} = movie;
+		const {title, poster_path, vote_average, overview, release_date} = movie;
 		const movieEl = document.createElement('div');		
 		movieEl.classList.add('pelicula');
 		movieEl.innerHTML = `			
 			<a href="#"><img src="${IMG_URL+poster_path}" alt="${title}"></a>
 			<div class="descripcion bg-light text-secondary text-justify">
 				<p class="title" id="title">${title}</p>
+				<span class="${getColor(vote_average)}">${vote_average}</span>
 				<p class="overview " id="overview"> "${overview}"</p>
 				<p class="title-cast font-weight-bold">Cast</p>
 				<p class="cast" id="cast">....</p>
@@ -352,13 +361,14 @@ function thetMovies10(data){
 	carousel10.innerHTML = '';
 
 	data.forEach(movie => {
-		const {title, poster_path, overview, release_date} = movie;
+		const {title, poster_path, vote_average, overview, release_date} = movie;
 		const movieEl = document.createElement('div');		
 		movieEl.classList.add('pelicula');
 		movieEl.innerHTML = `			
 			<a href="#"><img src="${IMG_URL+poster_path}" alt="${title}"></a>
 			<div class="descripcion bg-light text-secondary text-justify">
 				<p class="title" id="title">${title}</p>
+				<span class="${getColor(vote_average)}">${vote_average}</span>
 				<p class="overview " id="overview"> "${overview}"</p>
 				<p class="title-cast font-weight-bold">Cast</p>
 				<p class="cast" id="cast">....</p>
@@ -369,6 +379,14 @@ function thetMovies10(data){
 
 	carousel10.appendChild(movieEl);
 	});
+}
+
+function getColor(vote){
+    if(vote>=8){
+        return 'green'
+    }else if(vote>=5){
+        return 'orange'
+    } else{return 'red'}
 }
 
 form.addEventListener('submit', (e)=> {
